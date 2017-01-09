@@ -9431,7 +9431,6 @@ Rebel - DIO-09553&lt;br&gt;
 <part name="SJ4" library="jumper" deviceset="SJ" device=""/>
 <part name="SJ5" library="jumper" deviceset="SJ" device=""/>
 <part name="SJ6" library="jumper" deviceset="SJ" device=""/>
-<part name="SJ7" library="jumper" deviceset="SJ" device=""/>
 <part name="SJ8" library="jumper" deviceset="SJ" device=""/>
 <part name="H3" library="holes" deviceset="MOUNT-HOLE" device="3.2" value="MOUNT-HOLE3.2"/>
 <part name="H4" library="holes" deviceset="MOUNT-HOLE" device="3.2" value="MOUNT-HOLE3.2"/>
@@ -9492,6 +9491,7 @@ Rebel - DIO-09553&lt;br&gt;
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
 <part name="FRAME2" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
+<part name="SJ9" library="jumper" deviceset="SJ" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9527,6 +9527,9 @@ for 7 total independent PWM outputs</text>
 <wire x1="144.78" y1="43.18" x2="175.26" y2="43.18" width="0.1524" layer="97"/>
 <text x="239.268" y="12.446" size="1.778" layer="97">1.0</text>
 <text x="165.862" y="16.764" size="1.778" layer="97">Stephen Harrison</text>
+<text x="86.36" y="139.7" size="1.27" layer="97">Note V1.1 N-Channel FETs used
+A3 for Channel 4
+</text>
 </plain>
 <instances>
 <instance part="CONN1" gate="G$1" x="220.98" y="162.56"/>
@@ -9546,14 +9549,27 @@ for 7 total independent PWM outputs</text>
 <instance part="LOGO1" gate="G$1" x="220.98" y="101.6"/>
 <instance part="R1" gate="G$1" x="228.6" y="111.76" rot="R180"/>
 <instance part="GND11" gate="G$1" x="208.28" y="104.14"/>
-<instance part="SJ1" gate="1" x="106.68" y="129.54"/>
-<instance part="SJ2" gate="1" x="106.68" y="127"/>
-<instance part="SJ3" gate="1" x="106.68" y="124.46"/>
-<instance part="SJ4" gate="1" x="106.68" y="121.92"/>
-<instance part="SJ5" gate="1" x="149.86" y="142.24"/>
-<instance part="SJ6" gate="1" x="149.86" y="144.78"/>
-<instance part="SJ7" gate="1" x="106.68" y="144.78"/>
-<instance part="SJ8" gate="1" x="106.68" y="147.32"/>
+<instance part="SJ1" gate="1" x="106.68" y="129.54" smashed="yes">
+<attribute name="VALUE" x="104.14" y="125.73" size="1.778" layer="96"/>
+</instance>
+<instance part="SJ2" gate="1" x="106.68" y="127" smashed="yes">
+<attribute name="VALUE" x="104.14" y="123.19" size="1.778" layer="96"/>
+</instance>
+<instance part="SJ3" gate="1" x="106.68" y="124.46" smashed="yes">
+<attribute name="VALUE" x="104.14" y="120.65" size="1.778" layer="96"/>
+</instance>
+<instance part="SJ4" gate="1" x="106.68" y="121.92" smashed="yes">
+<attribute name="VALUE" x="104.14" y="118.11" size="1.778" layer="96"/>
+</instance>
+<instance part="SJ5" gate="1" x="149.86" y="142.24" smashed="yes">
+<attribute name="VALUE" x="147.32" y="138.43" size="1.778" layer="96"/>
+</instance>
+<instance part="SJ6" gate="1" x="149.86" y="144.78" smashed="yes">
+<attribute name="VALUE" x="147.32" y="140.97" size="1.778" layer="96"/>
+</instance>
+<instance part="SJ8" gate="1" x="106.68" y="147.32" smashed="yes">
+<attribute name="VALUE" x="104.14" y="143.51" size="1.778" layer="96"/>
+</instance>
 <instance part="H3" gate="G$1" x="200.66" y="129.54"/>
 <instance part="H4" gate="G$1" x="200.66" y="137.16"/>
 <instance part="Q2" gate="G$1" x="109.22" y="45.72" smashed="yes">
@@ -9742,6 +9758,9 @@ for 7 total independent PWM outputs</text>
 </instance>
 <instance part="FRAME2" gate="G$1" x="0" y="5.08"/>
 <instance part="FRAME2" gate="V" x="147.32" y="5.08"/>
+<instance part="SJ9" gate="1" x="106.68" y="149.86" smashed="yes">
+<attribute name="VALUE" x="104.14" y="146.05" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9991,17 +10010,11 @@ for 7 total independent PWM outputs</text>
 <wire x1="116.84" y1="142.24" x2="114.3" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$42" class="0">
-<segment>
-<pinref part="U5" gate="G$1" pin="A3"/>
-<wire x1="116.84" y1="144.78" x2="111.76" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="SJ7" gate="1" pin="2"/>
-</segment>
-</net>
 <net name="N$44" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="A5"/>
-<wire x1="116.84" y1="149.86" x2="114.3" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="SJ9" gate="1" pin="2"/>
+<wire x1="111.76" y1="149.86" x2="116.84" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$45" class="0">
@@ -10110,11 +10123,6 @@ for 7 total independent PWM outputs</text>
 </net>
 <net name="CHANNEL_4" class="0">
 <segment>
-<pinref part="SJ7" gate="1" pin="1"/>
-<wire x1="101.6" y1="144.78" x2="99.06" y2="144.78" width="0.1524" layer="91"/>
-<label x="99.06" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="SJ1" gate="1" pin="1"/>
 <wire x1="101.6" y1="129.54" x2="99.06" y2="129.54" width="0.1524" layer="91"/>
 <label x="99.06" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -10127,6 +10135,11 @@ for 7 total independent PWM outputs</text>
 <wire x1="12.7" y1="139.7" x2="7.62" y2="139.7" width="0.1524" layer="91"/>
 <label x="7.62" y="139.7" size="1.27" layer="95" rot="R90" xref="yes"/>
 <junction x="12.7" y="139.7"/>
+</segment>
+<segment>
+<pinref part="SJ9" gate="1" pin="1"/>
+<wire x1="101.6" y1="149.86" x2="99.06" y2="149.86" width="0.1524" layer="91"/>
+<label x="99.06" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CHANNEL_3" class="0">
@@ -10491,6 +10504,12 @@ for 7 total independent PWM outputs</text>
 <pinref part="D4" gate="G$1" pin="A"/>
 <pinref part="R404" gate="G$1" pin="2"/>
 <wire x1="12.7" y1="124.46" x2="12.7" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="U5" gate="G$1" pin="A3"/>
+<wire x1="116.84" y1="144.78" x2="114.3" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
