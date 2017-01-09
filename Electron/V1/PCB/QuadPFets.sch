@@ -9492,6 +9492,10 @@ Rebel - DIO-09553&lt;br&gt;
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
 <part name="FRAME2" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
 <part name="SJ9" library="jumper" deviceset="SJ" device=""/>
+<part name="SJ7" library="jumper" deviceset="SJ" device=""/>
+<part name="SJ10" library="jumper" deviceset="SJ" device=""/>
+<part name="SJ11" library="jumper" deviceset="SJ" device=""/>
+<part name="SJ12" library="jumper" deviceset="SJ" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9535,7 +9539,7 @@ A3 for Channel 4
 <instance part="CONN1" gate="G$1" x="220.98" y="162.56"/>
 <instance part="GND1" gate="G$1" x="210.82" y="157.48"/>
 <instance part="SUPPLY2" gate="G$1" x="106.68" y="167.64"/>
-<instance part="GND2" gate="G$1" x="101.6" y="157.48"/>
+<instance part="GND2" gate="G$1" x="86.36" y="162.56" rot="R270"/>
 <instance part="H1" gate="G$1" x="200.66" y="144.78"/>
 <instance part="SUPPLY4" gate="G$1" x="144.78" y="167.64"/>
 <instance part="U5" gate="G$1" x="127" y="144.78"/>
@@ -9761,6 +9765,18 @@ A3 for Channel 4
 <instance part="SJ9" gate="1" x="106.68" y="149.86" smashed="yes">
 <attribute name="VALUE" x="104.14" y="146.05" size="1.778" layer="96"/>
 </instance>
+<instance part="SJ7" gate="1" x="106.68" y="160.02" smashed="yes">
+<attribute name="VALUE" x="104.14" y="156.21" size="1.778" layer="96"/>
+</instance>
+<instance part="SJ10" gate="1" x="106.68" y="157.48" smashed="yes">
+<attribute name="VALUE" x="104.14" y="153.67" size="1.778" layer="96"/>
+</instance>
+<instance part="SJ11" gate="1" x="149.86" y="137.16" smashed="yes">
+<attribute name="VALUE" x="147.32" y="133.35" size="1.778" layer="96"/>
+</instance>
+<instance part="SJ12" gate="1" x="149.86" y="139.7" smashed="yes">
+<attribute name="VALUE" x="147.32" y="135.89" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9775,8 +9791,7 @@ A3 for Channel 4
 <segment>
 <pinref part="U5" gate="G$1" pin="GND@2"/>
 <pinref part="GND2" gate="G$1" pin="GND"/>
-<wire x1="116.84" y1="162.56" x2="101.6" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="162.56" x2="101.6" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="162.56" x2="88.9" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="GND"/>
@@ -10032,13 +10047,15 @@ A3 for Channel 4
 <net name="N$47" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="RX"/>
-<wire x1="116.84" y1="157.48" x2="114.3" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="SJ10" gate="1" pin="2"/>
+<wire x1="111.76" y1="157.48" x2="116.84" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$48" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="TX"/>
-<wire x1="116.84" y1="160.02" x2="114.3" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="SJ7" gate="1" pin="2"/>
+<wire x1="111.76" y1="160.02" x2="116.84" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -10052,13 +10069,15 @@ A3 for Channel 4
 <net name="SDA" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="D0"/>
-<wire x1="139.7" y1="137.16" x2="142.24" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="SJ11" gate="1" pin="1"/>
+<wire x1="144.78" y1="137.16" x2="139.7" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="D1"/>
-<wire x1="139.7" y1="139.7" x2="142.24" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="SJ12" gate="1" pin="1"/>
+<wire x1="139.7" y1="139.7" x2="144.78" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CHANNEL_1" class="0">
@@ -10081,6 +10100,11 @@ A3 for Channel 4
 <label x="10.16" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 <junction x="12.7" y="45.72"/>
 </segment>
+<segment>
+<pinref part="SJ11" gate="1" pin="2"/>
+<wire x1="154.94" y1="137.16" x2="157.48" y2="137.16" width="0.1524" layer="91"/>
+<label x="157.48" y="137.16" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="CHANNEL_2" class="0">
 <segment>
@@ -10100,6 +10124,11 @@ A3 for Channel 4
 <pinref part="R204" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="43.18" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
 <junction x="93.98" y="45.72"/>
+</segment>
+<segment>
+<pinref part="SJ10" gate="1" pin="1"/>
+<wire x1="101.6" y1="157.48" x2="99.06" y2="157.48" width="0.1524" layer="91"/>
+<label x="99.06" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D7" class="0">
@@ -10141,6 +10170,11 @@ A3 for Channel 4
 <wire x1="101.6" y1="149.86" x2="99.06" y2="149.86" width="0.1524" layer="91"/>
 <label x="99.06" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="SJ7" gate="1" pin="1"/>
+<wire x1="101.6" y1="160.02" x2="99.06" y2="160.02" width="0.1524" layer="91"/>
+<label x="99.06" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="CHANNEL_3" class="0">
 <segment>
@@ -10161,6 +10195,11 @@ A3 for Channel 4
 <wire x1="17.78" y1="93.98" x2="12.7" y2="93.98" width="0.1524" layer="91"/>
 <label x="12.7" y="93.98" size="1.27" layer="95" rot="R90" xref="yes"/>
 <junction x="17.78" y="93.98"/>
+</segment>
+<segment>
+<pinref part="SJ12" gate="1" pin="2"/>
+<wire x1="154.94" y1="139.7" x2="157.48" y2="139.7" width="0.1524" layer="91"/>
+<label x="157.48" y="139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$30" class="0">
