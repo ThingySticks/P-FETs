@@ -10393,6 +10393,7 @@ for 7 total independent PWM outputs</text>
 <junction x="73.66" y="101.6"/>
 <pinref part="D301" gate="G$1" pin="C"/>
 <wire x1="73.66" y1="86.36" x2="73.66" y2="88.9" width="0.1524" layer="91"/>
+<junction x="73.66" y="88.9"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="G$1" pin="3"/>
@@ -10523,7 +10524,22 @@ for 7 total independent PWM outputs</text>
 <approved hash="106,1,116.84,160.02,N$48,,,,,"/>
 <approved hash="106,1,139.7,139.7,SCL,,,,,"/>
 <approved hash="106,1,139.7,137.16,SDA,,,,,"/>
+<approved hash="113,1,210.333,170.18,D6,,,,,"/>
 <approved hash="113,1,217.17,111.438,D5,,,,,"/>
+<approved hash="113,1,106.68,131.056,SJ1,,,,,"/>
+<approved hash="113,1,106.68,128.516,SJ2,,,,,"/>
+<approved hash="113,1,106.68,125.976,SJ3,,,,,"/>
+<approved hash="113,1,106.68,123.436,SJ4,,,,,"/>
+<approved hash="113,1,149.86,143.756,SJ5,,,,,"/>
+<approved hash="113,1,149.86,146.296,SJ6,,,,,"/>
+<approved hash="113,1,106.68,146.296,SJ7,,,,,"/>
+<approved hash="113,1,106.68,148.836,SJ8,,,,,"/>
+<approved hash="113,1,12.0227,171.645,JP2,,,,,"/>
+<approved hash="113,1,12.0227,181.805,JP3,,,,,"/>
+<approved hash="113,1,72.1565,129.54,D401,,,,,"/>
+<approved hash="113,1,77.2365,83.82,D301,,,,,"/>
+<approved hash="113,1,72.1565,48.26,D101,,,,,"/>
+<approved hash="113,1,150.897,48.26,D201,,,,,"/>
 </errors>
 </schematic>
 </drawing>
