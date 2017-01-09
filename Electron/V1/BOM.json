@@ -1,0 +1,60 @@
+{
+"version":"1",
+"product":""Quad FETS",
+"parts": [
+
+*{"name":"JP1", "value":"6 way terminal block header", "farnellPart":"2493693","mfgPartNo":"CTB9352/6", "price": 0.214},
+*{"name":"JP1b", "value":"6 way terminal block pluggable, 12 AWG", "farnellPart":"2493641", "mfgPartNo":"CTB9202/6", "price": 0.566},
+
+*{"name":"JP1", "value":"6 way terminal block - Alternative Part", "farnellPart":"2007999","mfgPartNo":"MC000030", "price": 0.722},
+
+*{"name":"C1", "value":"0.1uF", "case": "0805", "farnellPart":["1759167","2310668", "2310707"], "price":0.0045},
+
+*{"name":"R101", "value":"10R", "case": "0805", "farnellPart":["9332421","2128957"], "price":0.0008},
+*{"name":"R201", "value":"10R", "case": "0805", "farnellPart":["9332421","2128957"], "price":0.0008},
+*{"name":"R301", "value":"10R", "case": "0805", "farnellPart":["9332421","2128957"], "price":0.0008},
+*{"name":"R401", "value":"10R", "case": "0805", "farnellPart":["9332421","2128957"], "price":0.0008},
+
+*{"name":"R102", "value":"10k", "case": "0805", "farnellPart":["9332391","2129195"], "mfgPartNo":"MC01W0805110k", "price":0.0009},
+*{"name":"R202", "value":"10k", "case": "0805", "farnellPart":["9332391","2129195"], "mfgPartNo":"MC01W0805110k", "price":0.0009},
+*{"name":"R302", "value":"10k", "case": "0805", "farnellPart":["9332391","2129195"], "mfgPartNo":"MC01W0805110k", "price":0.0009},
+*{"name":"R402", "value":"10k", "case": "0805", "farnellPart":["9332391","2129195"], "mfgPartNo":"MC01W0805110k", "price":0.0009},
+
+*{"name":"R103", "value":"10k", "case": "0805", "farnellPart":["9332391","2129195"], "mfgPartNo":"MC01W0805110k", "price":0.0009},
+*{"name":"R203", "value":"10k", "case": "0805", "farnellPart":["9332391","2129195"], "mfgPartNo":"MC01W0805110k", "price":0.0009},
+*{"name":"R303", "value":"10k", "case": "0805", "farnellPart":["9332391","2129195"], "mfgPartNo":"MC01W0805110k", "price":0.0009},
+*{"name":"R403", "value":"10k", "case": "0805", "farnellPart":["9332391","2129195"], "mfgPartNo":"MC01W0805110k", "price":0.0009},
+
+*{"name":"R104", "value":"1k5", "case": "0805", "farnellPart":["9332600","2129125"], "price":0.0008},
+*{"name":"R204", "value":"1k5", "case": "0805", "farnellPart":["9332600","2129125"], "price":0.0008},
+*{"name":"R304", "value":"1k5", "case": "0805", "farnellPart":["9332600","2129125"], "price":0.0008},
+*{"name":"R404", "value":"1k5", "case": "0805", "farnellPart":["9332600","2129125"], "price":0.0008},
+
+*{"name":"D5", "value":"reverse LED - Green.", "comment": "bottom layer - optional", "farnellPart":"2217905", "price":0.111 },
+*{"name":"D5", "value":"reverse LED - Blue.", "comment": "bottom layer - optional", "farnellPart":"2217907", "price":0.23 },
+*{"name":"R1", "value":"1k5", "case": "0805", "comment": "bottom layer - optional", "farnellPart":["9332600","2129125"], "price":0.0008},
+
+*{"name":"D6", "value":"MBRA140T3G", "farnellPart":"9555986", "price": 0.106},
+
+**{"name":"D1", "value":"Blue LED.", "case":"0805", "comment": "0805 to fit on 1206 pads", "farnellPart":"1716765", "price":0.237 },
+**{"name":"D2", "value":"Blue LED.", "case":"0805", "comment": "0805 to fit on 1206 pads", "farnellPart":"1716765", "price":0.237 },
+**{"name":"D3", "value":"Blue LED.", "case":"0805", "comment": "0805 to fit on 1206 pads", "farnellPart":"1716765", "price":0.237 },
+**{"name":"D4", "value":"Blue LED.", "case":"0805", "comment": "0805 to fit on 1206 pads", "farnellPart":"1716765", "price":0.237 },
+
+*{"name":"U1", "value":"IRF9388TRPBF  MOSFET Transistor, P Channel, -12 A, -30 V, 0.0085 ohm, -20 V, -1.8 V", "case": "SO8", "farnellPart":["2579999"], "mfgPartNo":"IRF9388TRPBF", "price":0.269},
+*{"name":"U2", "value":"IRF9388TRPBF", "case": "SO8", "farnellPart":["2579999"], "mfgPartNo":"IRF9388TRPBF", "price":0.269},
+*{"name":"U3", "value":"IRF9388TRPBF", "case": "SO8", "farnellPart":["2579999"], "mfgPartNo":"IRF9388TRPBF", "price":0.269},
+*{"name":"U4", "value":"IRF9388TRPBF", "case": "SO8", "farnellPart":["2579999"], "mfgPartNo":"IRF9388TRPBF", "price":0.269},
+
+*{"name":"Q1", "value":"BC817", "case": "SOT-23", "farnellPart":["1798081", "2336780"], "mfgPartNo":"BC817-40", "price":0.014},
+*{"name":"Q2", "value":"BC817", "case": "SOT-23", "farnellPart":["1798081", "2336780"], "mfgPartNo":"BC817-40", "price":0.014},
+*{"name":"Q3", "value":"BC817", "case": "SOT-23", "farnellPart":["1798081", "2336780"], "mfgPartNo":"BC817-40", "price":0.014},
+*{"name":"Q4", "value":"BC817", "case": "SOT-23", "farnellPart":["1798081", "2336780"], "mfgPartNo":"BC817-40", "price":0.014},
+
+
+
+*{"name":"CONN1", "value":"USB connector", "Price": "", "farnellPart":"2476092", "mfgPartNo":"MC000991", "price":0.35 },
+*{"name":"U5", "value":"Photon", "comment":"User supplied. Photon, Electron or Bluz"},
+*{"name":"U5a", "value":"12 Way Header",  "farnellPart":"1593465" "comment":"User supplied. Photon, Electron or Bluz", "quantity":"2", "price":0.0911"},
+*{"name":"U5a", "value":"18 Way Header", "farnellPart":"1801220", "comment":"Optional, use for Electron", "quantity":"2", "price":1.11},
+]}
